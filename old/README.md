@@ -1,3 +1,3 @@
 # Old Personal Resumes
 
-This repository contains old personal resumes that are no longer up to date.
+This directory contains old personal resumes that are no longer up to date.
