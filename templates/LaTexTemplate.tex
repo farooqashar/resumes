@@ -1,0 +1,228 @@
+%-------------------------
+% Resume in Latex
+% Author : Ashar Farooq
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    {\Huge \scshape Ashar Farooq} \\ \vspace{1pt}
+    119 Bay State Road, Boston, MA 02215 \\ \vspace{1pt}
+    \small \raisebox{-0.1\height}\faPhone\ 631-356-1333 ~ \href{mailto:afarooq@mit.edu}{\raisebox{-0.2\height}\faEnvelope\  \underline{afarooq@mit.edu}} ~ 
+    \href{https://linkedin.com/in/ashar-f-415249131/}{\raisebox{-0.2\height}\faLinkedin\ \underline{linkedin.com/in/ashar-f-415249131}}  ~
+    \href{https://github.com/farooqashar}{\raisebox{-0.2\height}\faGithub\ \underline{github.com/farooqashar}}
+    \vspace{-8pt}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Massachusetts Institute of Technology}{Sep. 2019 -- May 2023}
+      {Bachelor of Science in Computer Science, Economics, and Data Science}{Cambridge, MA}
+  \resumeSubHeadingListEnd
+
+%------RELEVANT COURSEWORK-------
+\section{Relevant Coursework}
+    %\resumeSubHeadingListStart
+        \begin{multicols}{4}
+            \begin{itemize}[itemsep=-5pt, parsep=3pt]
+                \item Design and Analysis of Algorithms
+                \item Mathematics for Computer Science
+                \item Fundamentals of Programming
+                \item Machine Learning
+                \item Econometrics 
+            \end{itemize}
+        \end{multicols}
+        \vspace*{2.0\multicolsep}
+    %\resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Memorang}{February 2021 -- August 2021}
+      {Software Engineering Intern}{Remote}
+      \resumeItemListStart
+        \resumeItem{Designed, prototyped, and implemented a Content Management System(CMS) for Memorang's administrative users on their web application.}
+        \resumeItem{Using Next.js, React.js, and principles of Material Design, developed a new feature for displaying plans and bundles of different Memorang's services while engaging 1:1 with company engineers.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Digital Humanities Lab}{June 2021 -- August 2021}
+      {Research Assistant}{Remote}
+      \resumeItemListStart
+        \resumeItem{Implemented a Django/React-based full stack web application for the sonification of text via varying sentiment analysis and a gender analysis toolkit of historical corpora while coordinating regularly with team members on development and testing.}
+    \resumeItemListEnd
+    
+    \resumeSubheading
+      {elphi}{January 2021 -- January 2021}
+      {Software Engineering Intern}{Remote}
+      \resumeItemListStart
+        \resumeItem{Using React, JavaScript, HTML, CSS, and Node, designed and implemented a new intuitive UI system for the Point of Sale(POS) system for streamlining the mortgage origination process from the client perspective.}
+        \resumeItem{Collaborated with several team members and company founders daily to produce efficient code for the improvement of the web application via new features and components, such as drag and drop questions, filtering categories, and configuring the online mortgage application to the Cloud Firestore database.}
+    \resumeItemListEnd
+    
+  \resumeSubHeadingListEnd
+\vspace{-16pt}
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Human Resources Management Application} $|$ \emph{React, Node, Express, MySQL}}{August 2021}
+          \resumeItemListStart
+            \resumeItem{Developed a management system for adding, deleting, updating, and viewing relevant administrative information about employees of a company.}
+          \resumeItemListEnd
+          \vspace{-13pt}
+      \resumeProjectHeading
+          {\textbf{Meetings Log Application} $|$ \emph{Vue, Firebase, JavaScript, HTML}}{July 2021}
+          \resumeItemListStart
+            \resumeItem{Created an application that enables users to login and create meetings that other users can check into and view attendees.}
+          \resumeItemListEnd 
+          \vspace{-13pt}
+          \resumeProjectHeading
+          {\textbf{FireRoad053} $|$ \emph{Julia, Jump, Gurobi}}{May 2021}
+          \resumeItemListStart
+            \resumeItem{Designed a system for MIT students to optimize their 4 year schedule based on their utilities and real-life constraints of MIT's curriculum.}
+          \resumeItemListEnd 
+    \resumeSubHeadingListEnd
+\vspace{-15pt}
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Python, JavaScript, HTML, CSS, Julia, Basic C++} \\
+     \textbf{Technologies/Frameworks}{: Git, React, Next.js, Django, Firebase, Node, Flask} \\
+    }}
+ \end{itemize}
+ \vspace{-16pt}
+
+
+%-----------INVOLVEMENT---------------
+\section{Extracurricular}
+    \resumeSubHeadingListStart
+        \resumeSubheading{Lab Assistant}{Spring 2021 -- Present}{MIT's Introductory Python Courses 6.0001 and 6.0002}{}
+            \resumeItemListStart
+                \resumeItem{Guided students through problem sets on programming fundamentals, such as dynamic programming and recursion, in addition to conducting office hours.}
+            \resumeItemListEnd
+        \resumeSubheading{Computer Science Instructor}{April 2021 -- August 2021}{Middle East Entrepreneurs of Tomorrow (MEET)}{}
+            \resumeItemListStart
+                \resumeItem{Designed and implemented course materials, such as labs, reviews, and exercises, on full stack web development, such as the Flask framework.}
+            \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+\end{document}
